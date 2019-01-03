@@ -1,0 +1,18 @@
+<?php session_start(); ?>
+<?php include_once("analyticstracking.php") ?>
+<?php error_reporting(E_ERROR | E_PARSE); ?>
+<?php include("header.php") ?>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--form action="audioUpload.php" method="GET" enctype="multipart/form-data"-->
+<form action="audioUpload.php" method="post" target="audiobox" enctype="multipart/form-data">
+    Select Audio file to upload:
+	<br><input type="file" name="fileToUpload" id="fileToUpload"><br>
+   <br> <input type="submit" value="Upload MP3 file" name="submit">
+</form>
+
+</body>
+</html>

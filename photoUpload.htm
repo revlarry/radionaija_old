@@ -1,0 +1,10 @@
+<?php session_start(); ?>
+<?php error_reporting(E_ERROR | E_PARSE); ?>
+<?php include_once("analyticstracking.php"); ?>
+
+<form action="photoUploadProcess.php" method="post" target="photobox" enctype="multipart/form-data">
+    Select <b>Photo</b> file to upload:
+	<br><input type="file" name="fileToUpload" id="fileToUpload"><br>
+	<!--input type="hidden" name="uploadType" value="banner"-->	
+   <br> <input type="submit" value="Upload file" name="submit">
+</form>
